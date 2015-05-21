@@ -400,6 +400,7 @@
 				62C29CE21B0E010100E66E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		62C29CE31B0E010100E66E94 /* Build configuration list for PBXNativeTarget "UV AnalyserTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +409,7 @@
 				62C29CE51B0E010100E66E94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
