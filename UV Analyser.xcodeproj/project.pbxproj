@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62C29CCA1B0E010100E66E94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C29CC91B0E010100E66E94 /* AppDelegate.swift */; };
+		62C29CCC1B0E010100E66E94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C29CCB1B0E010100E66E94 /* ViewController.swift */; };
+		62C29CCE1B0E010100E66E94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62C29CCD1B0E010100E66E94 /* Images.xcassets */; };
+		62C29CD11B0E010100E66E94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C29CCF1B0E010100E66E94 /* Main.storyboard */; };
+		62C29CDD1B0E010100E66E94 /* UV_AnalyserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C29CDC1B0E010100E66E94 /* UV_AnalyserTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		62C29CD71B0E010100E66E94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62C29CBC1B0E010100E66E94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62C29CC31B0E010100E66E94;
+			remoteInfo = "UV Analyser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		62C29CC41B0E010100E66E94 /* UV Analyser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UV Analyser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C29CC81B0E010100E66E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C29CC91B0E010100E66E94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62C29CCB1B0E010100E66E94 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62C29CCD1B0E010100E66E94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		62C29CD01B0E010100E66E94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62C29CD61B0E010100E66E94 /* UV AnalyserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UV AnalyserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C29CDB1B0E010100E66E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62C29CDC1B0E010100E66E94 /* UV_AnalyserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UV_AnalyserTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62C29CC11B0E010100E66E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C29CD31B0E010100E66E94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62C29CBB1B0E010100E66E94 = {
+			isa = PBXGroup;
+			children = (
+				62C29CC61B0E010100E66E94 /* UV Analyser */,
+				62C29CD91B0E010100E66E94 /* UV AnalyserTests */,
+				62C29CC51B0E010100E66E94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		62C29CC51B0E010100E66E94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62C29CC41B0E010100E66E94 /* UV Analyser.app */,
+				62C29CD61B0E010100E66E94 /* UV AnalyserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62C29CC61B0E010100E66E94 /* UV Analyser */ = {
+			isa = PBXGroup;
+			children = (
+				62C29CC91B0E010100E66E94 /* AppDelegate.swift */,
+				62C29CCB1B0E010100E66E94 /* ViewController.swift */,
+				62C29CCD1B0E010100E66E94 /* Images.xcassets */,
+				62C29CCF1B0E010100E66E94 /* Main.storyboard */,
+				62C29CC71B0E010100E66E94 /* Supporting Files */,
+			);
+			path = "UV Analyser";
+			sourceTree = "<group>";
+		};
+		62C29CC71B0E010100E66E94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62C29CC81B0E010100E66E94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62C29CD91B0E010100E66E94 /* UV AnalyserTests */ = {
+			isa = PBXGroup;
+			children = (
+				62C29CDC1B0E010100E66E94 /* UV_AnalyserTests.swift */,
+				62C29CDA1B0E010100E66E94 /* Supporting Files */,
+			);
+			path = "UV AnalyserTests";
+			sourceTree = "<group>";
+		};
+		62C29CDA1B0E010100E66E94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62C29CDB1B0E010100E66E94 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62C29CC31B0E010100E66E94 /* UV Analyser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C29CE01B0E010100E66E94 /* Build configuration list for PBXNativeTarget "UV Analyser" */;
+			buildPhases = (
+				62C29CC01B0E010100E66E94 /* Sources */,
+				62C29CC11B0E010100E66E94 /* Frameworks */,
+				62C29CC21B0E010100E66E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UV Analyser";
+			productName = "UV Analyser";
+			productReference = 62C29CC41B0E010100E66E94 /* UV Analyser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		62C29CD51B0E010100E66E94 /* UV AnalyserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62C29CE31B0E010100E66E94 /* Build configuration list for PBXNativeTarget "UV AnalyserTests" */;
+			buildPhases = (
+				62C29CD21B0E010100E66E94 /* Sources */,
+				62C29CD31B0E010100E66E94 /* Frameworks */,
+				62C29CD41B0E010100E66E94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				62C29CD81B0E010100E66E94 /* PBXTargetDependency */,
+			);
+			name = "UV AnalyserTests";
+			productName = "UV AnalyserTests";
+			productReference = 62C29CD61B0E010100E66E94 /* UV AnalyserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62C29CBC1B0E010100E66E94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Tim Snow";
+				TargetAttributes = {
+					62C29CC31B0E010100E66E94 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					62C29CD51B0E010100E66E94 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 62C29CC31B0E010100E66E94;
+					};
+				};
+			};
+			buildConfigurationList = 62C29CBF1B0E010100E66E94 /* Build configuration list for PBXProject "UV Analyser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62C29CBB1B0E010100E66E94;
+			productRefGroup = 62C29CC51B0E010100E66E94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62C29CC31B0E010100E66E94 /* UV Analyser */,
+				62C29CD51B0E010100E66E94 /* UV AnalyserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62C29CC21B0E010100E66E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C29CCE1B0E010100E66E94 /* Images.xcassets in Resources */,
+				62C29CD11B0E010100E66E94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C29CD41B0E010100E66E94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62C29CC01B0E010100E66E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C29CCC1B0E010100E66E94 /* ViewController.swift in Sources */,
+				62C29CCA1B0E010100E66E94 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62C29CD21B0E010100E66E94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62C29CDD1B0E010100E66E94 /* UV_AnalyserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		62C29CD81B0E010100E66E94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 62C29CC31B0E010100E66E94 /* UV Analyser */;
+			targetProxy = 62C29CD71B0E010100E66E94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		62C29CCF1B0E010100E66E94 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62C29CD01B0E010100E66E94 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62C29CDE1B0E010100E66E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62C29CDF1B0E010100E66E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		62C29CE11B0E010100E66E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "UV Analyser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		62C29CE21B0E010100E66E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "UV Analyser/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		62C29CE41B0E010100E66E94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UV AnalyserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UV Analyser.app/Contents/MacOS/UV Analyser";
+			};
+			name = Debug;
+		};
+		62C29CE51B0E010100E66E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UV AnalyserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UV Analyser.app/Contents/MacOS/UV Analyser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62C29CBF1B0E010100E66E94 /* Build configuration list for PBXProject "UV Analyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C29CDE1B0E010100E66E94 /* Debug */,
+				62C29CDF1B0E010100E66E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62C29CE01B0E010100E66E94 /* Build configuration list for PBXNativeTarget "UV Analyser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C29CE11B0E010100E66E94 /* Debug */,
+				62C29CE21B0E010100E66E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		62C29CE31B0E010100E66E94 /* Build configuration list for PBXNativeTarget "UV AnalyserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62C29CE41B0E010100E66E94 /* Debug */,
+				62C29CE51B0E010100E66E94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62C29CBC1B0E010100E66E94 /* Project object */;
+}
