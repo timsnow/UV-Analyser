@@ -103,11 +103,11 @@
                                 <tabViewItems>
                                     <tabViewItem label="Abs to mg/mL" identifier="1" id="p85-iV-haT">
                                         <view key="view" id="wDE-Qb-tyJ">
-                                            <rect key="frame" x="10" y="33" width="146" height="0.0"/>
+                                            <rect key="frame" x="10" y="33" width="247" height="70"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LwP-QT-4cG">
-                                                    <rect key="frame" x="25" y="-27" width="78" height="17"/>
+                                                    <rect key="frame" x="25" y="43" width="78" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Abs reading" id="q9h-84-IjT">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -115,7 +115,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FI8-yb-cGj">
-                                                    <rect key="frame" x="14" y="-57" width="100" height="22"/>
+                                                    <rect key="frame" x="14" y="13" width="100" height="22"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="10" drawsBackground="YES" id="Rbw-1W-Vyb">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -123,7 +123,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lap-jt-BwT">
-                                                    <rect key="frame" x="136" y="-27" width="92" height="17"/>
+                                                    <rect key="frame" x="136" y="43" width="92" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Concentration" id="lWj-ef-2f8">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -131,7 +131,7 @@
                                                     </textFieldCell>
                                                 </textField>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geR-8m-b4f">
-                                                    <rect key="frame" x="130" y="-54" width="104" height="17"/>
+                                                    <rect key="frame" x="130" y="16" width="104" height="17"/>
                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="1000" id="jsj-j5-197">
                                                         <font key="font" metaFont="system"/>
                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -234,13 +234,13 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="absReadingInput" destination="FI8-yb-cGj" id="fQn-Y2-eGJ"/>
-                        <outlet property="absReadingOutput" destination="gY3-GX-ISh" id="CWE-rJ-TFj"/>
-                        <outlet property="cellPathLength" destination="Evs-NU-40T" id="fMs-kF-bqA"/>
-                        <outlet property="concentrationInput" destination="Q5S-pE-n3M" id="sqr-On-Vcx"/>
-                        <outlet property="concentrationOutput" destination="geR-8m-b4f" id="SHS-bt-BJ1"/>
-                        <outlet property="extinctionCoefficient" destination="3eV-Me-Ep0" id="fof-Nb-n9R"/>
-                        <outlet property="molecularWeight" destination="iAh-wa-gnN" id="5Zx-a7-Qsm"/>
+                        <outlet property="absReadingInputField" destination="FI8-yb-cGj" id="iND-i3-dP9"/>
+                        <outlet property="absReadingLabel" destination="gY3-GX-ISh" id="hxe-fn-QuM"/>
+                        <outlet property="cellPathLengthInputField" destination="Evs-NU-40T" id="JH8-DV-IWT"/>
+                        <outlet property="concentrationInputField" destination="Q5S-pE-n3M" id="ZGO-4P-xnw"/>
+                        <outlet property="concentrationLabel" destination="geR-8m-b4f" id="3X6-w7-2hQ"/>
+                        <outlet property="extinctionCoefficientInputField" destination="3eV-Me-Ep0" id="4hu-j2-Wl0"/>
+                        <outlet property="molecularWeightInputField" destination="iAh-wa-gnN" id="l3n-fK-deG"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

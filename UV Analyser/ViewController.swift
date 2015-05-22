@@ -5,7 +5,8 @@
 //  Created by Tim Snow on 21/05/2015.
 //  Copyright (c) 2015 Tim Snow. All rights reserved.
 //
-
+//  Equations from: http://en.wikipedia.org/wiki/Beer–Lambert_law
+//
 
 import Cocoa
 
@@ -13,37 +14,39 @@ import Cocoa
 class ViewController: NSViewController, NSTextFieldDelegate {
 
     
-    @IBOutlet weak var absReadingInput: NSTextField!
-    @IBOutlet weak var concentrationInput: NSTextField!
+    // Delcaring IBOutlets from the storyboard
+    @IBOutlet weak var absReadingInputField: NSTextField!
+    @IBOutlet weak var concentrationInputField: NSTextField!
     
-    @IBOutlet weak var absReadingOutput: NSTextField!
-    @IBOutlet weak var concentrationOutput: NSTextField!
+    @IBOutlet weak var absReadingLabel: NSTextField!
+    @IBOutlet weak var concentrationLabel: NSTextField!
     
-    @IBOutlet weak var cellPathLength: NSTextField!
-    @IBOutlet weak var extinctionCoefficient: NSTextField!
-    @IBOutlet weak var molecularWeight: NSTextField!
+    @IBOutlet weak var cellPathLengthInputField: NSTextField!
+    @IBOutlet weak var extinctionCoefficientInputField: NSTextField!
+    @IBOutlet weak var molecularWeightInputField: NSTextField!
    
-    
+
+    // If the view loaded, let's initialise with some default values and start listening...
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        absReadingInput.delegate = self
-        absReadingInput.stringValue = "1"
+        absReadingInputField.delegate = self
+        absReadingInputField.stringValue = "1"
         
-        concentrationInput.delegate = self
-        concentrationInput.stringValue = "1"
+        concentrationInputField.delegate = self
+        concentrationInputField.stringValue = "1"
         
-        absReadingOutput.stringValue = "1"
-        concentrationOutput.stringValue = "1"
+        absReadingLabel.stringValue = "1"
+        concentrationLabel.stringValue = "1"
         
-        cellPathLength.delegate = self
-        cellPathLength.stringValue = "1"
+        cellPathLengthInputField.delegate = self
+        cellPathLengthInputField.stringValue = "1"
         
-        extinctionCoefficient.delegate = self
-        extinctionCoefficient.stringValue = "1"
+        extinctionCoefficientInputField.delegate = self
+        extinctionCoefficientInputField.stringValue = "1"
  
-        molecularWeight.delegate = self
-        molecularWeight.stringValue = "1"
+        molecularWeightInputField.delegate = self
+        molecularWeightInputField.stringValue = "1"
         
         absFromConcentration()
         concentrationFromAbs()
@@ -57,25 +60,26 @@ class ViewController: NSViewController, NSTextFieldDelegate {
     
 
     override func controlTextDidChange (notification: NSNotification) {
-        if notification.object?.description == absReadingInput.description {
+        // Listen for NSNotifications when the input field values change and handle them
+        if notification.object?.description == absReadingInputField.description {
             concentrationFromAbs()
         }
         
-        if notification.object?.description == concentrationInput.description {
+        if notification.object?.description == concentrationInputField.description {
             absFromConcentration()
         }
         
-        if notification.object?.description == cellPathLength.description {
-            absFromConcentration()
-            concentrationFromAbs()
-        }
-        
-        if notification.object?.description == extinctionCoefficient.description {
+        if notification.object?.description == cellPathLengthInputField.description {
             absFromConcentration()
             concentrationFromAbs()
         }
         
-        if notification.object?.description == molecularWeight.description {
+        if notification.object?.description == extinctionCoefficientInputField.description {
+            absFromConcentration()
+            concentrationFromAbs()
+        }
+        
+        if notification.object?.description == molecularWeightInputField.description {
             absFromConcentration()
             concentrationFromAbs()
         }
@@ -83,26 +87,34 @@ class ViewController: NSViewController, NSTextFieldDelegate {
 
     
     func absFromConcentration() {
-        var cellPathLengthFloat = (cellPathLength.stringValue as NSString).floatValue
-        var extinctionCoefficientFloat = (extinctionCoefficient.stringValue as NSString).floatValue
-        var concentrationInputFloat = (concentrationInput.stringValue as NSString).floatValue
-        var molecularWeightFloat = (molecularWeight.stringValue as NSString).floatValue
-        
+        // Do some maths based on the user input
+        // Start by getting the values from the input fields and converting them to floats
+        var cellPathLengthFloat = (cellPathLengthInputField.stringValue as NSString).floatValue
+        var extinctionCoefficientFloat = (extinctionCoefficientInputField.stringValue as NSString).floatValue
+        var concentrationInputFloat = (concentrationInputField.stringValue as NSString).floatValue
+        var molecularWeightFloat = (molecularWeightInputField.stringValue as NSString).floatValue
+
+        // Then do the maths
         var result = cellPathLengthFloat * extinctionCoefficientFloat * (concentrationInputFloat / molecularWeightFloat)
-        
-        absReadingOutput.stringValue = String(format: "%5.3f", result)
+ 
+        // Then update the label appropriately
+        absReadingLabel.stringValue = String(format: "%5.3f", result)
     }
     
     
     func concentrationFromAbs() {
-        var cellPathLengthFloat = (cellPathLength.stringValue as NSString).floatValue
-        var extinctionCoefficientFloat = (extinctionCoefficient.stringValue as NSString).floatValue
-        var absReadingInputFloat = (absReadingInput.stringValue as NSString).floatValue
-        var molecularWeightFloat = (molecularWeight.stringValue as NSString).floatValue
-        
+        // Do some maths based on the user input
+        // Start by getting the values from the input fields and converting them to floats
+        var cellPathLengthFloat = (cellPathLengthInputField.stringValue as NSString).floatValue
+        var extinctionCoefficientFloat = (extinctionCoefficientInputField.stringValue as NSString).floatValue
+        var absReadingInputFloat = (absReadingInputField.stringValue as NSString).floatValue
+        var molecularWeightFloat = (molecularWeightInputField.stringValue as NSString).floatValue
+
+        // Then do the maths
         var result = (absReadingInputFloat / (cellPathLengthFloat * extinctionCoefficientFloat)) * molecularWeightFloat
         
-        concentrationOutput.stringValue = String(format: "%5.3f", result)
+        // Then update the label appropriately
+        concentrationLabel.stringValue = String(format: "%5.3f", result)
     }
     
     

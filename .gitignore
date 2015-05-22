@@ -9,3 +9,10 @@
 *.xcuserstate
 UV\ Analyser.xcworkspace/
 xcuserdata/
+
+# LaTeX
+*.aux
+*.fdb_latexmk
+*.log
+*.out
+*.synctex*

@@ -1,0 +1,87 @@
+% Declaring packages and formatting
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx} % EFor graphics
+\usepackage{amsmath} % For mathematics
+\usepackage{setspace} % For doublespacing
+\usepackage{fancyhdr} % For headers
+\usepackage{siunitx} % For SI units
+\usepackage[scale=0.75]{geometry} % For wider pages
+\usepackage[colorlinks = true, urlcolor = blue, linkcolor = black]{hyperref} % For hyperlinks
+
+
+% Let's begin the document
+\begin{document}
+	% Let's set up our headers, footers and doublespacing
+	\pagestyle{fancy}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0.4pt}
+	\renewcommand{\subsectionmark}[1]{}
+	\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+	\cfoot{Last Updated -- \today \\ Tim Snow -- \href{http://www.cunninglemon.com}{http://www.cunninglemon.com} \\ \vspace{1em} \includegraphics[height=2em]{Graphics/License}}
+	\rfoot{\thepage}
+	\doublespacing
+
+	\begin{centering}
+ 		\section*{UV Analyser}
+ 		\label{sec:uv_analyser}
+	\end{centering} 	
+
+		\begin{figure}[ht!]
+			\centering
+			\includegraphics[height=6em]{Graphics/UVIcon}
+		\end{figure}
+
+		\noindent This program has been designed to be small and simple, it uses the Beer-Lambert law, equation \ref{eq:concentrationToAbs}, to calculate the absorbance, A, for a sample with a known exctinction coefficient, $\varepsilon$, and molecular weight, M$_{\text{w}}$.
+
+		\begin{equation}
+			\text{A} = \varepsilon \times l \times \left( \frac{c}{\text{M}_{\text{w}}} \right)
+			\label{eq:concentrationToAbs}
+		\end{equation}
+
+		\noindent It can also calculate the concentration of a sample from its absorbance, using equation \ref{eq:absToConcentration}.
+
+		\begin{equation}
+			c = \left( \frac{\text{A}}{l \times \varepsilon} \right) \times \text{M}_{\text{w}}
+			\label{eq:absToConcentration}
+		\end{equation}
+
+		\noindent It should be noted that usually the output from the Beer-Lambert law is \si{\mole\per\liter} however this program requests a molecular weight to convert this to \si{\gram\per\liter} which is directly equivilent to \si{\milli\gram\per\milli\liter}, which is commonly the unit of interest. If a result in \si{\mole\per\liter} is desired, simply enter 1 as the molecular weight.
+
+		\begin{figure}[ht!]
+			\centering
+			\includegraphics[width=0.4\textwidth]{Graphics/ScreenOne} \includegraphics[width=0.4\textwidth]{Graphics/ScreenTwo}
+		\end{figure}
+
+		\noindent The figure on the left shows the program startup screen. Simply entering numbers, as shown on the figure on the right, will provide the result requested in either Abs or \si{\milli\gram\per\milli\liter}, depending on which tab is selected by the user, for a given extinction coefficient and molecular weight.
+
+		\clearpage
+
+
+	\begin{centering}
+ 		\section*{Requirements and License}
+ 		\label{sec:requirements_and_license}
+	\end{centering} 
+		
+			\noindent This software should work work with any Macintosh computer running Mac OS 10.10 or later and is released under the BSD 3-Clause license, as follows:
+
+			\begin{figure}[ht!]
+				\centering
+				\includegraphics[height=6em]{Graphics/BSD}
+			\end{figure}
+
+			\begin{quote}
+				{\it
+					Copyright \textcopyright 2015, Tim Snow\\
+					All rights reserved.
+
+					Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+					1. Redistributions of source code must retain the copyright notice, this list of conditions and the following disclaimer.\\
+					2. Redistributions in binary form must reproduce the copyright notice, this list of conditions and the disclaimer found in the license file and/or other materials provided with the distribution.\\
+					3. Neither authors' names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+					THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+				}
+			\end{quote}
+\end{document}
